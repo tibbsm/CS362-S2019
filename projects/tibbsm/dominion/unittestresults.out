@@ -1,0 +1,17 @@
+[ START OF UNITTEST 1 (unittest1.c) ]
+
+[ TESTING: Adventurer Card ]
+(Test 1) Checking player handCount after playing adventurer card: PASSED
+(Test 2) Checking player deckCount after playing adventurer card: PASSED
+(Test 3) Checking player's last card in hand after playing adventurer card: PASSED
+(Test 3) Checking player's second to last card in hand after playing adventurer card: PASSED
+Passed 4 out of 4 tests.
+Failed 0 out of 4 tests.
+Pass rate: 100.00%
+
+File 'dominion.c'
+Lines executed:19.54% of 650
+dominion.c:creating 'dominion.c.gcov'
+
+[ END OF UNITTEST 1 (unittest1.c) ]
+
