@@ -25,9 +25,16 @@ int main(int argc, char const *argv[])
 
     cardEffect(adventurer, choice1, choice2, choice3, &tester, handpos, &bonus);
 
-    // Adventurer draws two cards, so the tester state should have 2 more cards in handCount.
+struct gameState {
+  int discard[MAX_PLAYERS][MAX_DECK];
+  int discardCount[MAX_PLAYERS];
+  int playedCards[MAX_DECK];
+  int playedCardCount;
+};
+
+    // Adventurer draws two cards & discards one, so the tester state should have 1 more card in handCount.
     printf("(Test 1) Checking player handCount after playing adventurer card: ");
-    if (tester.handCount[player] != key.handCount[player] + 2)
+    if (tester.handCount[player] != key.handCount[player] + 2 - 1)
     {   
         fails++;
         total++;
@@ -67,10 +74,23 @@ int main(int argc, char const *argv[])
     }   
 
     // Adventurer draws two treasure cards, so the second to last card in tester should be a treasure card.
-    printf("(Test 3) Checking player's second to last card in hand after playing adventurer card: ");
+    printf("(Test 4) Checking player's second to last card in hand after playing adventurer card: ");
     if (tester.hand[player][tester.handCount[player]-2] == copper ||
         tester.hand[player][tester.handCount[player]-2] == silver ||
         tester.hand[player][tester.handCount[player]-2] == gold)
+    {
+        passes++;
+        total++;
+        printf("PASSED\n");
+    } else {   
+        fails++;
+        total++;
+        printf("FAILED\n");
+    }  
+
+    // Players played card count should be incremented by 1
+    printf("(Test 5) Checking player's played card count count after playing adventurer card: ");
+    if (tester.playedCardCount == key.playedCardCount + 1)
     {
         passes++;
         total++;

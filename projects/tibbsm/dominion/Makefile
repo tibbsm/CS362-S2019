@@ -33,11 +33,17 @@ runtests: testDrawCard
 	cat dominion.c.gcov >> unittestresult.out
 
 unittestresults.out: unittest1.c dominion.o rngs.o
-	echo "[ START OF UNITTEST 1 (unittest1.c) ]\n" >> unittestresults.out
-	gcc -o unittest1 -g unittest1.c dominion.o rngs.o  $(CFLAGS)
-	./unittest1 >> unittestresults.out
+# 	echo "[ START OF UNITTEST 1 (unittest1.c) ]\n" >> unittestresults.out
+# 	gcc -o unittest1 -g unittest1.c dominion.o rngs.o  $(CFLAGS)
+# 	./unittest1 >> unittestresults.out
+# 	gcov dominion.c >> unittestresults.out
+# 	echo "[ END OF UNITTEST 1 (unittest1.c) ]\n" >> unittestresults.out
+
+	echo "[ START OF UNITTEST 2 (unittest2.c) ]\n" >> unittestresults.out
+	gcc -o unittest2 -g unittest2.c dominion.o rngs.o  $(CFLAGS)
+	./unittest2 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
-	echo "[ END OF UNITTEST 1 (unittest1.c) ]\n" >> unittestresults.out
+	echo "[ END OF UNITTEST 2 (unittest2.c) ]\n" >> unittestresults.out
 
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)

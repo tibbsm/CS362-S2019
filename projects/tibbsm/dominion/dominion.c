@@ -643,7 +643,7 @@ int getCost(int cardNumber)
   return -1;
 }
 
-void adventurerCard(struct gameState *state, int currentPlayer) {
+void adventurerCard(struct gameState *state, int currentPlayer, int handPos) {
 
     // This is the counter for drawn treasure cards
     int drawntreasure = 0;
@@ -687,6 +687,8 @@ void adventurerCard(struct gameState *state, int currentPlayer) {
         // decrement z
         z = z-1;
     }
+    //discard card from hand
+    discardCard(handPos, currentPlayer, state, 0);
     return;
 }
 
@@ -699,7 +701,6 @@ void smithyCard(struct gameState *state, int currentPlayer, int handPos) {
         drawCard(currentPlayer, state);
     }
 
-    //discard card from hand
     discardCard(handPos, currentPlayer, state, 0);
     return;
 }
@@ -716,8 +717,8 @@ void councilRoomCard(struct gameState *state, int currentPlayer, int handPos) {
     state->numBuys++;
 
     //Each other player draws a card
-// BUG 3: Using numPlayers, instead of numBuys
-    for (i = 0; i < state->numBuys; i++) {
+// BUG 3: Using numBuys, instead of numPlayers
+    for (i = 0; i < state->numPlayers; i++) {
         if ( i != currentPlayer ) {
             drawCard(i, state);
         }
@@ -775,7 +776,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
     {
 //
     case adventurer:
-        adventurerCard(state, currentPlayer);
+        adventurerCard(state, currentPlayer, handPos);
         return 0;
 //           
     case council_room:
