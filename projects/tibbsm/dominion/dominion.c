@@ -718,7 +718,7 @@ void councilRoomCard(struct gameState *state, int currentPlayer, int handPos) {
 
     //Each other player draws a card
 // BUG 3: Using numBuys, instead of numPlayers
-    for (i = 0; i < state->numPlayers; i++) {
+    for (i = 0; i < state->numBuys; i++) {
         if ( i != currentPlayer ) {
             drawCard(i, state);
         }

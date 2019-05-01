@@ -33,17 +33,56 @@ runtests: testDrawCard
 	cat dominion.c.gcov >> unittestresult.out
 
 unittestresults.out: unittest1.c dominion.o rngs.o
-# 	echo "[ START OF UNITTEST 1 (unittest1.c) ]\n" >> unittestresults.out
-# 	gcc -o unittest1 -g unittest1.c dominion.o rngs.o  $(CFLAGS)
-# 	./unittest1 >> unittestresults.out
-# 	gcov dominion.c >> unittestresults.out
-# 	echo "[ END OF UNITTEST 1 (unittest1.c) ]\n" >> unittestresults.out
+	echo " ▼ [ START OF UNITTEST 1 (unittest1.c) ] ▼ \n" >> unittestresults.out
+	gcc -o unittest1 -g unittest1.c dominion.o rngs.o  $(CFLAGS)
+	./unittest1 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	echo " ▲ [ END OF UNITTEST 1 (unittest1.c) ] ▲ \n" >> unittestresults.out
 
-	echo "[ START OF UNITTEST 2 (unittest2.c) ]\n" >> unittestresults.out
+	echo " ▼ [ START OF UNITTEST 2 (unittest2.c) ] ▼ \n" >> unittestresults.out
 	gcc -o unittest2 -g unittest2.c dominion.o rngs.o  $(CFLAGS)
 	./unittest2 >> unittestresults.out
 	gcov dominion.c >> unittestresults.out
-	echo "[ END OF UNITTEST 2 (unittest2.c) ]\n" >> unittestresults.out
+	echo " ▲ [ END OF UNITTEST 2 (unittest2.c) ] ▲ \n" >> unittestresults.out
+
+	echo " ▼ [ START OF UNITTEST 3 (unittest3.c) ] ▼ \n" >> unittestresults.out
+	gcc -o unittest3 -g unittest3.c dominion.o rngs.o  $(CFLAGS)
+	./unittest3 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	echo " ▲ [ END OF UNITTEST 3 (unittest3.c) ] ▲ \n" >> unittestresults.out
+
+	echo " ▼ [ START OF UNITTEST 4 (unittest4.c) ] ▼ \n" >> unittestresults.out
+	gcc -o unittest4 -g unittest4.c dominion.o rngs.o  $(CFLAGS)
+	./unittest4 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	echo " ▲ [ END OF UNITTEST 4 (unittest4.c) ] ▲ \n" >> unittestresults.out
+
+	echo " ▼ [ START OF UNITTEST 5 (cardtest1.c) ] ▼ \n" >> unittestresults.out
+	gcc -o cardtest1 -g cardtest1.c dominion.o rngs.o  $(CFLAGS)
+	./cardtest1 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	echo " ▲ [ END OF UNITTEST 5 (cardtest1.c) ] ▲ \n" >> unittestresults.out
+
+	echo " ▼ [ START OF UNITTEST 6 (cardtest2.c) ] ▼ \n" >> unittestresults.out
+	gcc -o cardtest2 -g cardtest2.c dominion.o rngs.o  $(CFLAGS)
+	./cardtest2 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	echo " ▲ [ END OF UNITTEST 6 (cardtest1.c) ] ▲ \n" >> unittestresults.out
+
+	echo " ▼ [ START OF UNITTEST 7 (cardtest3.c) ] ▼ \n" >> unittestresults.out
+	gcc -o cardtest3 -g cardtest3.c dominion.o rngs.o  $(CFLAGS)
+	./cardtest3 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	echo " ▲ [ END OF UNITTEST 7 (cardtest1.c) ] ▲ \n" >> unittestresults.out
+
+	echo " ▼ [ START OF UNITTEST 8 (cardtest4.c) ] ▼ \n" >> unittestresults.out
+	gcc -o cardtest4 -g cardtest4.c dominion.o rngs.o  $(CFLAGS)
+	./cardtest4 >> unittestresults.out
+	gcov dominion.c >> unittestresults.out
+	echo " ▲ [ END OF UNITTEST 8 (cardtest1.c) ] ▲ \n" >> unittestresults.out
+
+cleantest:
+	rm -f unittestresults.out
 
 player: player.c interface.o
 	gcc -o player player.c -g  dominion.o rngs.o interface.o $(CFLAGS)
@@ -51,4 +90,4 @@ player: player.c interface.o
 all: playdom player 
 
 clean:
-	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe
+	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe 

@@ -25,13 +25,6 @@ int main(int argc, char const *argv[])
 
     cardEffect(adventurer, choice1, choice2, choice3, &tester, handpos, &bonus);
 
-struct gameState {
-  int discard[MAX_PLAYERS][MAX_DECK];
-  int discardCount[MAX_PLAYERS];
-  int playedCards[MAX_DECK];
-  int playedCardCount;
-};
-
     // Adventurer draws two cards & discards one, so the tester state should have 1 more card in handCount.
     printf("(Test 1) Checking player handCount after playing adventurer card: ");
     if (tester.handCount[player] != key.handCount[player] + 2 - 1)
