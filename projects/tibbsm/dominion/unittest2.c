@@ -87,7 +87,7 @@ int main(int argc, char const *argv[])
     printf("(Test 5) Checking other %d player(s)'s hand counts: ", numPlayer - 1);
     for (i = 1; i < numPlayer; i++ )
     {
-        if (tester.handCount[player+1] != key.handCount[player+1] + 1)
+        if (tester.handCount[player+i] != key.handCount[player+i] + 1)
             flag = 0;
     }
     if (flag == 0)

@@ -6,12 +6,17 @@
 (Test 3) Checking player's last card in hand after playing adventurer card: PASSED
 (Test 4) Checking player's second to last card in hand after playing adventurer card: PASSED
 (Test 5) Checking player's played card count count after playing adventurer card: PASSED
-Passed 5 out of 5 tests.
-Failed 0 out of 5 tests.
-Pass rate: 100.00%
+(Test 6) Checking discardCount variable: FAILED
+(Test 7) Checking discard pile for correct cards: FAILED
+Passed 5 out of 7 tests.
+Failed 2 out of 7 tests.
+Pass rate: 71.43%
 
 File 'dominion.c'
-Lines executed:21.35% of 651
+Lines executed:22.12% of 651
+Branches executed:25.66% of 417
+Taken at least once:16.31% of 417
+No calls
 dominion.c:creating 'dominion.c.gcov'
 
  ▲ [ END OF UNITTEST 1 (unittest1.c) ] ▲ 
@@ -23,13 +28,16 @@ dominion.c:creating 'dominion.c.gcov'
 (Test 2) Checking player deckCount after playing adventurer card: PASSED
 (Test 3) Checking player's played card count count after playing council room card: PASSED
 (Test 4) Checking player's number of buy actions: PASSED
-(Test 5) Checking other 3 player(s)'s hand counts: PASSED
-Passed 5 out of 5 tests.
-Failed 0 out of 5 tests.
-Pass rate: 100.00%
+(Test 5) Checking other 3 player(s)'s hand counts: FAILED
+Passed 4 out of 5 tests.
+Failed 1 out of 5 tests.
+Pass rate: 80.00%
 
 File 'dominion.c'
-Lines executed:24.27% of 651
+Lines executed:25.04% of 651
+Branches executed:27.58% of 417
+Taken at least once:18.94% of 417
+No calls
 dominion.c:creating 'dominion.c.gcov'
 
  ▲ [ END OF UNITTEST 2 (unittest2.c) ] ▲ 
@@ -45,7 +53,10 @@ Failed 2 out of 3 tests.
 Pass rate: 33.33%
 
 File 'dominion.c'
-Lines executed:25.35% of 651
+Lines executed:26.11% of 651
+Branches executed:28.06% of 417
+Taken at least once:19.66% of 417
+No calls
 dominion.c:creating 'dominion.c.gcov'
 
  ▲ [ END OF UNITTEST 3 (unittest3.c) ] ▲ 
@@ -62,7 +73,10 @@ Failed 1 out of 4 tests.
 Pass rate: 75.00%
 
 File 'dominion.c'
-Lines executed:26.27% of 651
+Lines executed:27.04% of 651
+Branches executed:28.06% of 417
+Taken at least once:19.90% of 417
+No calls
 dominion.c:creating 'dominion.c.gcov'
 
  ▲ [ END OF UNITTEST 4 (unittest4.c) ] ▲ 
@@ -85,19 +99,17 @@ Failed 0 out of 10 tests.
 Pass rate: 100.00%
 
 File 'dominion.c'
-Lines executed:26.27% of 651
+Lines executed:27.04% of 651
+Branches executed:28.06% of 417
+Taken at least once:19.90% of 417
+No calls
 dominion.c:creating 'dominion.c.gcov'
 
  ▲ [ END OF UNITTEST 5 (cardtest1.c) ] ▲ 
 
  ▼ [ START OF UNITTEST 6 (cardtest2.c) ] ▼ 
 
-[ TESTING: Council room Card - Part Two ]
-0) 1 1
-1) 4 4
-2) 4 4
-3) 4 4
-4) 4 4
+[ TESTING: Smithy room Card - Part Two ]
 (Test 1) Checking gameState's numPlayers variable: PASSED
 (Test 2) Checking gameState's outpostPlayed variable: PASSED
 (Test 3) Checking gameState's outpostTurn variable: PASSED
@@ -105,27 +117,25 @@ dominion.c:creating 'dominion.c.gcov'
 (Test 5) Checking gameState's phase variable: PASSED
 (Test 6) Checking gameState's numActions variable: PASSED
 (Test 7) Checking gameState's coins variable: PASSED
-(Test 8) Checking gameState's numBuys variable: FAILED
-(Test 9) Checking that original cards in the hand are still there: 0) 1 1
-1) 4 4
-2) 4 4
-3) 4 4
-4) 4 4
-PASSED
+(Test 8) Checking gameState's numBuys variable: PASSED
+(Test 9) Checking that original cards in the hand are still there: PASSED
 (Test 10) Checking playedCards variable: PASSED
-Passed 9 out of 10 tests.
-Failed 1 out of 10 tests.
-Pass rate: 90.00%
+Passed 10 out of 10 tests.
+Failed 0 out of 10 tests.
+Pass rate: 100.00%
 
 File 'dominion.c'
-Lines executed:26.27% of 651
+Lines executed:27.04% of 651
+Branches executed:28.06% of 417
+Taken at least once:19.90% of 417
+No calls
 dominion.c:creating 'dominion.c.gcov'
 
  ▲ [ END OF UNITTEST 6 (cardtest1.c) ] ▲ 
 
  ▼ [ START OF UNITTEST 7 (cardtest3.c) ] ▼ 
 
-[ TESTING: Smithy Card - Part Two ]
+[ TESTING: Great Hall Card ]
 (Test 1) Checking gameState's numPlayers variable: PASSED
 (Test 2) Checking gameState's outpostPlayed variable: PASSED
 (Test 3) Checking gameState's outpostTurn variable: PASSED
@@ -134,21 +144,26 @@ dominion.c:creating 'dominion.c.gcov'
 (Test 6) Checking gameState's numActions variable: PASSED
 (Test 7) Checking gameState's coins variable: PASSED
 (Test 8) Checking gameState's numBuys variable: PASSED
-(Test 9) Checking that original cards in the hand are still there: PASSED
-(Test 10) Checking playedCards variable: PASSED
-Passed 10 out of 10 tests.
-Failed 0 out of 10 tests.
+(Test 9) Checking playedCards variable: PASSED
+(Test 10) Checking player handCount after playing outpost card: PASSED
+(Test 11) Checking player handCount after playing great hall card: PASSED
+(Test 12) Checking player deckCount after playing great hall card: PASSED
+Passed 12 out of 12 tests.
+Failed 0 out of 12 tests.
 Pass rate: 100.00%
 
 File 'dominion.c'
-Lines executed:26.27% of 651
+Lines executed:27.96% of 651
+Branches executed:28.06% of 417
+Taken at least once:20.14% of 417
+No calls
 dominion.c:creating 'dominion.c.gcov'
 
  ▲ [ END OF UNITTEST 7 (cardtest1.c) ] ▲ 
 
  ▼ [ START OF UNITTEST 8 (cardtest4.c) ] ▼ 
 
-[ TESTING: Village Card - Part Two ]
+[ TESTING: Outpost Card ]
 (Test 1) Checking gameState's numPlayers variable: PASSED
 (Test 2) Checking gameState's outpostPlayed variable: PASSED
 (Test 3) Checking gameState's outpostTurn variable: PASSED
@@ -157,14 +172,17 @@ dominion.c:creating 'dominion.c.gcov'
 (Test 6) Checking gameState's numActions variable: PASSED
 (Test 7) Checking gameState's coins variable: PASSED
 (Test 8) Checking gameState's numBuys variable: PASSED
-(Test 9) Checking that original cards in the hand are still there: PASSED
-(Test 10) Checking playedCards variable: PASSED
+(Test 9) Checking playedCards variable: PASSED
+(Test 10) Checking player handCount after playing outpost card: PASSED
 Passed 10 out of 10 tests.
 Failed 0 out of 10 tests.
 Pass rate: 100.00%
 
 File 'dominion.c'
-Lines executed:26.27% of 651
+Lines executed:28.42% of 651
+Branches executed:28.06% of 417
+Taken at least once:20.38% of 417
+No calls
 dominion.c:creating 'dominion.c.gcov'
 
  ▲ [ END OF UNITTEST 8 (cardtest1.c) ] ▲ 

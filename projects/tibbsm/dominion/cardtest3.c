@@ -17,19 +17,17 @@ int main(int argc, char const *argv[])
         smithy, village, baron, great_hall};
     double passes = 0, fails = 0, total = 0;
 
-    int flag;
+    // int flag;
 
     initializeGame(numPlayer, k, seed, &key);
 
-    printf("[ TESTING: Smithy Card - Part Two ]\n");
+    printf("[ TESTING: Great Hall Card ]\n");
 
     memcpy(&tester, &key, sizeof(struct gameState));
 
-    cardEffect(smithy, choice1, choice2, choice3, &tester, handpos, &bonus);
+    cardEffect(great_hall, choice1, choice2, choice3, &tester, handpos, &bonus);
 
-    int i = 0;
-
-    // Smithy should not alter the numPlayers variable of the gamestate.
+    // Great Hall should not alter the numPlayers variable of the gamestate.
     printf("(Test 1) Checking gameState's numPlayers variable: ");  
     if (tester.numPlayers != key.numPlayers)
     {   
@@ -42,7 +40,7 @@ int main(int argc, char const *argv[])
         printf("PASSED\n");
     }
 
-    // Smithy should not alter the outpostPlayed variable of the gamestate.
+    // Great Hall should not alter the outpostPlayed count
     printf("(Test 2) Checking gameState's outpostPlayed variable: ");  
     if (tester.outpostPlayed != key.outpostPlayed)
     {   
@@ -55,7 +53,7 @@ int main(int argc, char const *argv[])
         printf("PASSED\n");
     }
 
-    // Smithy should not alter the outpostTurn variable of the gamestate.
+    // Great Hall should not alter the outpostTurn variable of the gamestate.
     printf("(Test 3) Checking gameState's outpostTurn variable: ");  
     if (tester.outpostTurn != key.outpostTurn)
     {   
@@ -68,7 +66,7 @@ int main(int argc, char const *argv[])
         printf("PASSED\n");
     }
 
-    // Smithy should not alter the whoseTurn variable of the gamestate.
+    // Great Hall should not alter the whoseTurn variable of the gamestate.
     printf("(Test 4) Checking gameState's whoseTurn variable: ");  
     if (tester.whoseTurn != key.whoseTurn)
     {   
@@ -81,7 +79,7 @@ int main(int argc, char const *argv[])
         printf("PASSED\n");
     }
 
-    // Smithy should not alter the phase variable of the gamestate.
+    // Great Hall should not alter the phase variable of the gamestate.
     printf("(Test 5) Checking gameState's phase variable: ");  
     if (tester.phase != key.phase)
     {   
@@ -94,9 +92,9 @@ int main(int argc, char const *argv[])
         printf("PASSED\n");
     }
 
-    // Smithy should not alter the numActions variable of the gamestate.
+    // Great Hall should increment the numActions variable of the gamestate.
     printf("(Test 6) Checking gameState's numActions variable: ");  
-    if (tester.numActions != key.numActions)
+    if (tester.numActions != key.numActions + 1)
     {   
         fails++;
         total++;
@@ -107,7 +105,7 @@ int main(int argc, char const *argv[])
         printf("PASSED\n");
     }
 
-    // Smithy should not alter the coins variable of the gamestate.
+    // Adventurer should not alter the coins variable of the gamestate.
     printf("(Test 7) Checking gameState's coins variable: ");  
     if (tester.coins != key.coins)
     {   
@@ -120,9 +118,22 @@ int main(int argc, char const *argv[])
         printf("PASSED\n");
     }
 
-    // Smithy should not alter the numBuys variable of the gamestate.
+    // Great Hall should not alter the numBuys variable of the gamestate.
     printf("(Test 8) Checking gameState's numBuys variable: ");  
-    if (tester.numBuys != key.numBuys)
+    if (tester.numBuys == key.numBuys)
+    {   
+        passes++;
+        total++;
+        printf("PASSED\n");
+    } else {
+        fails++;
+        total++;
+        printf("FAILED\n");
+    }
+
+    // Great Hall should be the last card added to playedCards.
+    printf("(Test 9) Checking playedCards variable: ");  
+    if (tester.playedCards[tester.playedCardCount - 1] == great_hall)
     {   
         fails++;
         total++;
@@ -133,14 +144,10 @@ int main(int argc, char const *argv[])
         printf("PASSED\n");
     }
 
-    // Smithy should not alter the original cards in the players hand.
-    printf("(Test 9) Checking that original cards in the hand are still there: ");  
-    flag = 1;
-    for (i = 0; i < key.handCount[player]; i++) {
-        if (key.hand[player][i] != tester.hand[player][i])
-            flag = 0;
-    }    
-    if (flag == 0)
+
+    // Great Hall draws 1 cards & discards one, so the tester state should have the 1 less card in handCount.
+    printf("(Test 10) Checking player handCount after playing outpost card: ");
+    if (tester.handCount[player] != key.handCount[player] - 1 + 1)
     {   
         fails++;
         total++;
@@ -149,11 +156,24 @@ int main(int argc, char const *argv[])
         passes++;
         total++;
         printf("PASSED\n");
-    }  
+    }
 
-    // Smithy should be the last card added to playedCards.
-    printf("(Test 10) Checking playedCards variable: ");  
-    if (tester.playedCards[tester.playedCardCount - 1] == smithy)
+    // Great Hall draws 1 cards & discards one, so the tester state should have the same amount of cards in handCount.
+    printf("(Test 11) Checking player handCount after playing great hall card: ");
+    if (tester.handCount[player] != key.handCount[player] + 1 - 1)
+    {   
+        fails++;
+        total++;
+        printf("FAILED\n");
+    } else {
+        passes++;
+        total++;
+        printf("PASSED\n");
+    }
+
+    // Great Hall draws 1 cards, so the tester state should have 1 less cards in deckCount.
+    printf("(Test 12) Checking player deckCount after playing great hall card: ");
+    if (tester.deckCount[player] != key.deckCount[player] - 1)
     {   
         fails++;
         total++;

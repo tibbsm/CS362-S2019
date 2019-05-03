@@ -94,6 +94,46 @@ int main(int argc, char const *argv[])
         printf("FAILED\n");
     }  
 
+
+    // Reset tester
+    memcpy(&tester, &key, sizeof(struct gameState));
+
+    // Arrange deck so that 2 adventurer cards will be drawn, followed by 2 coppers
+    int deckCount = tester.deckCount[player]-1;
+    tester.deck[player][deckCount] = adventurer;
+    tester.deck[player][--deckCount] = adventurer;
+    tester.deck[player][--deckCount] = copper;
+    tester.deck[player][--deckCount] = copper;
+
+    cardEffect(adventurer, choice1, choice2, choice3, &tester, handpos, &bonus);
+
+    // Adventurer should have added two cards to the discard pile.
+    printf("(Test 6) Checking discardCount variable: ");  
+    if (tester.discardCount[player] != 2)
+    {   
+        fails++;
+        total++;
+        printf("FAILED\n");
+    } else {
+        passes++;
+        total++;
+        printf("PASSED\n");
+    }
+
+    // Adventurer should have added two adventurer cards to the discard pile.
+    printf("(Test 7) Checking discard pile for correct cards: ");  
+    
+    if (tester.discard[player][0] != adventurer || tester.discard[player][1] != adventurer)
+    {   
+        fails++;
+        total++;
+        printf("FAILED\n");
+    } else {
+        passes++;
+        total++;
+        printf("PASSED\n");
+    }
+
     printf("Passed %.0f out of %.0f tests.\n", passes, total); 
     printf("Failed %.0f out of %.0f tests.\n", fails, total); 
     printf("Pass rate: %.2f%%\n\n", passes/total * 100); 
