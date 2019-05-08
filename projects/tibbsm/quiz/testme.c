@@ -13,7 +13,7 @@ char inputChar()
 char *inputString()
 {
     int i;
-    char *key = "abcdefghijklmnopqrstuvwxyz";
+    char *key = "efghijklmnopqrst";
     char *iStr = malloc(sizeof(char) * (6));
 
     // Fill array with random characters

@@ -7,7 +7,7 @@ build:
 	time ./testme
 
 test:
-	gcov testme.c
+	gcov -fb testme.c
 
 clean: 
 	rm -f testme.c.gcov testme.gcda testme.gcno	 
