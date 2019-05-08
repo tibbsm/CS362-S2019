@@ -1,11 +1,10 @@
 default: 
 	-make build 
 	-make test 
-	-make clean 
 
 build:
 	gcc -o testme testme.c -coverage 
-	./testme
+	time ./testme
 
 test:
 	gcov testme.c
