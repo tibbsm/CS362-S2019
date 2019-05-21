@@ -17,6 +17,8 @@
 
 import junit.framework.TestCase;
 
+import java.io.FileWriter;
+
 /**
  * Performs Validation Test for url validations.
  *
@@ -24,27 +26,24 @@ import junit.framework.TestCase;
  */
 public class UrlValidatorTest extends TestCase {
 
-   private final boolean printStatus = false;
-   private final boolean printIndex = false;//print index that indicates current scheme,host,port,path, query test were using.
+   private final boolean printStatus = true;
+   private final boolean printIndex = true;//print index that indicates current scheme,host,port,path, query test were using.
 
    public UrlValidatorTest(String testName) {
       super(testName);
    }
 
-   @Override
-protected void setUp() {
-      for (int index = 0; index < testPartsIndex.length - 1; index++) {
-         testPartsIndex[index] = 0;
-      }
-   }
+    @Override
+    protected void setUp() {
+        for (int index = 0; index < testPartsIndex.length - 1; index++) {
+            testPartsIndex[index] = 0;
+        }
+    }
 
    public void testIsValid() {
         testIsValid(testUrlParts, UrlValidator.ALLOW_ALL_SCHEMES);
         setUp();
-        long options =
-            UrlValidator.ALLOW_2_SLASHES
-                + UrlValidator.ALLOW_ALL_SCHEMES
-                + UrlValidator.NO_FRAGMENTS;
+        long options = UrlValidator.ALLOW_2_SLASHES + UrlValidator.ALLOW_ALL_SCHEMES + UrlValidator.NO_FRAGMENTS;
 
         testIsValid(testUrlPartsOptions, options);
    }
@@ -85,10 +84,14 @@ protected void setUp() {
       assertTrue(urlVal.isValid("http://www.google.com/"));
       int statusPerLine = 60;
       int printed = 0;
+//      int tested = 0;
       if (printIndex)  {
          statusPerLine = 6;
       }
       do {
+//          tested++;
+//          System.out.print(Integer.toString(tested)+") ");
+
           StringBuilder testBuffer = new StringBuilder();
          boolean expected = true;
          for (int testPartsIndexIndex = 0; testPartsIndexIndex < testPartsIndex.length; ++testPartsIndexIndex) {
@@ -98,11 +101,12 @@ protected void setUp() {
             expected &= part[index].valid;
          }
          String url = testBuffer.toString();
+         System.out.print(url+" - ");
          boolean result = urlVal.isValid(url);
          assertEquals(url, expected, result);
          if (printStatus) {
             if (printIndex) {
-               System.out.print(testPartsIndextoString());
+               System.out.print(testPartsIndextoString()+"\n");
             } else {
                if (result == expected) {
                   System.out.print('.');
