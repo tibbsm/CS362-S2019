@@ -32,6 +32,25 @@ runtests: testDrawCard
 	gcov dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
 
+
+randomtestresults:
+	echo " ▼ [ START OF Random Test 1(randomtestadventurer.c) ] ▼ \n" >> randomtestresults.out
+	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.o rngs.o  $(CFLAGS)
+	./randomtestadventurer >> randomtestresults.out
+	gcov -fb dominion.c >> randomtestresults.out
+	echo " ▲ [ END OF Random Test 1(randomtestadventurer.c) ] ▲ \n" >> randomtestresults.out
+	echo " ▼ [ START OF Random Test 2(randomtestcard1.c) ] ▼ \n" >> randomtestresults.out
+	gcc -o randomtestcard1 -g randomtestcard1.c dominion.o rngs.o  $(CFLAGS)
+	./randomtestcard1 >> randomtestresults.out
+	gcov -fb dominion.c >> randomtestresults.out
+	echo " ▲ [ END OF Random Test 2(randomtestcard1.c) ] ▲ \n" >> randomtestresults.out
+	echo " ▼ [ START OF Random Test 3(randomtestcard2.c) ] ▼ \n" >> randomtestresults.out
+	gcc -o randomtestcard2 -g randomtestcard2.c dominion.o rngs.o  $(CFLAGS)
+	./randomtestcard2 >> randomtestresults.out
+	gcov -fb dominion.c >> randomtestresults.out
+	cat dominion.c.gcov >> randomtestresults.out
+	echo " ▲ [ END OF Random Test 3(randomtestcard2.c) ] ▲ \n" >> randomtestresults.out
+
 unittestresults: unittest1.c dominion.o rngs.o
 	echo " ▼ [ START OF UNITTEST 1 (unittest1.c) ] ▼ \n" >> unittestresults.out
 	gcc -o unittest1 -g unittest1.c dominion.o rngs.o  $(CFLAGS)
