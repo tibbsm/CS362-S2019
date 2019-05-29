@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0dc67d4-aeb3-4774-ae6d-c4312132bf21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="c0dc67d4-aeb3-4774-ae6d-c4312132bf21" name="Default Changelist" comment="Adding Url Output Files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/URLValidatorCorrect/UrlValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/URLValidatorCorrect/UrlValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/URLValidatorCorrect/UrlValidatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/URLValidatorCorrect/UrlValidatorTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,42 +14,83 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/URLValidatorCorrect.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/UrlValidatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="44" column="40" lean-forward="true" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+            <state relative-caret-position="-111">
+              <caret line="82" column="10" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/junit/framework/TestCase.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="93" column="33" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="33" />
+              <folding>
+                <element signature="e#2335#2336#0" expanded="true" />
+                <element signature="e#2379#2380#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UrlValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="299" column="9" selection-start-line="299" selection-start-column="9" selection-end-line="299" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>testUrlPartsOptions</find>
+      <find>testUrlParts</find>
+      <find>testUrlParts</find>
+      <find>incrementTestPartsIndex</find>
+      <find>schemes</find>
+      <find>IPV</find>
+      <find>рф</find>
+      <find>isValid</find>
+      <find>assertFalse</find>
+      <find>increment</find>
+      <find>boolassertTrue</find>
+      <find>testPartsIndex</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="tibbsm-assignment-4" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/UrlValidator.java" />
         <option value="$PROJECT_DIR$/test/UrlValidatorTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
-    <option name="y" value="43" />
-    <option name="width" value="1340" />
-    <option name="height" value="705" />
+    <option name="x" value="-1886" />
+    <option name="y" value="25" />
+    <option name="width" value="1920" />
+    <option name="height" value="842" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -67,6 +110,11 @@
             <path>
               <item name="URLValidatorCorrect" type="b2602c69:ProjectViewProjectNode" />
               <item name="URLValidatorCorrect" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="URLValidatorCorrect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="URLValidatorCorrect" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -77,12 +125,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15039062" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -95,6 +146,25 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="UrlValidatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <output_file path="$PROJECT_DIR$/test/urls.txt" is_save="true" />
+      <module name="URLValidatorCorrect" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UrlValidatorTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UrlValidatorTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -109,45 +179,106 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="UrlValidatorTest - 2019.05.21 at 14h 12m 50s.xml">
+      <configuration name="UrlValidatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UrlValidatorTest - 2019.05.21 at 14h 24m 10s.xml">
+      <configuration name="UrlValidatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UrlValidatorTest - 2019.05.21 at 14h 25m 47s.xml">
+      <configuration name="UrlValidatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UrlValidatorTest - 2019.05.21 at 14h 53m 07s.xml">
+      <configuration name="UrlValidatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UrlValidatorTest - 2019.05.21 at 14h 57m 22s.xml">
+      <configuration name="UrlValidatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UrlValidatorTest - 2019.05.21 at 14h 58m 10s.xml">
+      <configuration name="UrlValidatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UrlValidatorTest - 2019.05.21 at 15h 00m 32s.xml">
+      <configuration name="UrlValidatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UrlValidatorTest - 2019.05.21 at 15h 01m 37s.xml">
+      <configuration name="UrlValidatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UrlValidatorTest - 2019.05.21 at 16h 19m 46s.xml">
+      <configuration name="UrlValidatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UrlValidatorTest - 2019.05.21 at 16h 20m 14s.xml">
+      <configuration name="UrlValidatorTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="43" width="1340" height="705" extended-state="0" />
+    <frame x="-1886" y="25" width="1920" height="842" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24961479" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17784877" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49922958" weight="0.296875" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32952693" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007704" side_tool="true" weight="0.3050571" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.12666667" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding Url Output Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Url Output Files" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/URLValidatorCorrect.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/UrlValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="299" column="9" selection-start-line="299" selection-start-column="9" selection-end-line="299" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/untitled.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/junit/framework/TestCase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="93" column="33" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="33" />
+          <folding>
+            <element signature="e#2335#2336#0" expanded="true" />
+            <element signature="e#2379#2380#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/UrlValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="44" column="40" lean-forward="true" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+        <state relative-caret-position="-111">
+          <caret line="82" column="10" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
