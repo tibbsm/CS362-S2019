@@ -170,9 +170,7 @@ public class RandomTest extends TestCase {
                             System.out.print("Ascii value = " + (int) badChar + ", char: " + badChar);
                             System.out.print("n = " + n + "\n");
 
-                            assertFalse(urlValidator.isValid("http://google.com:0/qwerwqer/tewerwqest?ewr=vew"));
-
-//                            assertFalse(urlValidator.isValid(badUrl));
+                            assertFalse(urlValidator.isValid(badUrl));
                             counter++;
 
                         }
