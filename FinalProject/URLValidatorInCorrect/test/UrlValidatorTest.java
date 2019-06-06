@@ -598,6 +598,4 @@ public class UrlValidatorTest extends TestCase {
                             new ResultPair("not_valid", false), // underscore not allowed
                             new ResultPair("HtTp", true),
                             new ResultPair("telnet", false)};
-
-
 }
