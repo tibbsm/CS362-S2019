@@ -130,4 +130,55 @@ public class RandomTest extends TestCase {
             count++;
         }
     }
+
+    String[] validSchemes = {"http://","https://","ftp://"};
+    String[] validAuthorities = {"google.com", "cnn.com", "yahoo.com", "bing.com", "github.com", "bitbucket.com","jira.com","asana.com","nba.com","www.wikipedia.org", "aol.com", "example.com", "oregonstate.edu", "some.io"};
+    String[] validPorts = {":0", ":1000", ":2000", ":3000", ":4000", ":5000", ":6000", ":7000", ":8000", ":9000", ":10000", ":11000", ":12000", ":13000", ":14000", ":15000",":16000",":17000", ":65535"};
+    String[] validPaths = {"/test1", "/qwerwqer/tewerwqest", "/teweqrqwerst/tewqerst", "/s/t", "/wqer/dsf", "/gdf/234", "/1234/1234", "/3/3", "/po/ll", "/se/cret", "/ok/ok", "/coo/l", "/noi/ce" };
+    String[] validQueries = {"?ewr=vew", "?q=r", "?qwe=e", "?qwer=c", "?2134=1", "?dfs=3", "?lh=sd", "?sadf=sadf", "?asdfsadf=asdf", "?adfs=ads", "?sadfadsf=asdfsa" };
+
+    public void testBadChars() {
+
+        String goodUrl = "";
+        UrlValidator urlValidator = new UrlValidator();
+        int counter = 1;
+
+        for (int i = 0; i < validSchemes.length; i++) {
+            for (int j = 0; j < validAuthorities.length; j++) {
+                for (int k = 0; k < validPorts.length; k++) {
+                    for (int l = 0; l < validPaths.length; l++) {
+                        for (int m = 0; m < validQueries.length; m++) {
+                            goodUrl = validSchemes[i] + validAuthorities[j] + validPorts[k] + validPaths[l] + validQueries[m];
+
+                            // get random "badChar" i.e. a character in range 0 - 32
+                            Random rand = new Random();
+                            char badChar = (char)rand.nextInt(33);
+
+                            // get random n for inserting badChar from 0 to goodUrl.length - 1
+                            int n = rand.nextInt(goodUrl.length());
+
+                            // make badUrl by inserting badChar somewhere in copy of goodUrl
+                            String badUrl = goodUrl.substring(0, n) + badChar + goodUrl.substring(n);
+
+                            System.out.print(counter+") testingBadChars()\nTesting url: " + badUrl +" - ");
+
+                            // assertTrue(urlValidator.isValid(badUrl));
+                            if (urlValidator.isValid(badUrl))
+                                System.out.print("PASSED!\n");
+                            else
+                                System.out.print("FAILED!\n");
+                            System.out.print("Ascii value = " + (int) badChar + ", char: " + badChar);
+                            System.out.print("n = " + n + "\n");
+
+                            assertFalse(urlValidator.isValid("http://google.com:0/qwerwqer/tewerwqest?ewr=vew"));
+
+//                            assertFalse(urlValidator.isValid(badUrl));
+                            counter++;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

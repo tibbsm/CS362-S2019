@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc7fabac-3930-4ffb-aa6b-9238cdcd8b35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/URLValidatorInCorrect.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/RandomTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UrlValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UrlValidator.java" afterDir="false" />
+    <list default="true" id="ac404751-1d96-48f8-add3-3fdbed09b1f8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/URLValidatorInCorrect.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,12 +16,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/RandomTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1965">
-              <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
+            <state relative-caret-position="2408">
+              <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,14 +29,40 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/UrlValidatorTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UrlValidator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="75" column="6" lean-forward="true" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
+            <state relative-caret-position="276">
+              <caret line="488" column="40" selection-start-line="488" selection-start-column="40" selection-end-line="488" selection-end-column="40" />
               <folding>
-                <element signature="e#15239#15240#0" expanded="true" />
-                <element signature="e#15268#15269#0" expanded="true" />
+                <element signature="e#8031#8032#0" expanded="true" />
+                <element signature="e#8057#8058#0" expanded="true" />
+                <element signature="e#8543#8544#0" expanded="true" />
+                <element signature="e#8576#8577#0" expanded="true" />
+                <element signature="e#9466#9467#0" expanded="true" />
+                <element signature="e#9510#9511#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/regex/Pattern.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5063">
+              <caret line="792" column="19" selection-start-line="792" selection-start-column="19" selection-end-line="792" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/regex/Matcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="241" selection-start-line="241" selection-end-line="241" />
+              <folding>
+                <element signature="e#24818#24819#0" expanded="true" />
+                <element signature="e#24863#24864#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,10 +131,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1912" />
-    <option name="y" value="8" />
-    <option name="width" value="1920" />
-    <option name="height" value="909" />
+    <option name="x" value="575" />
+    <option name="y" value="23" />
+    <option name="width" value="865" />
+    <option name="height" value="837" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -118,12 +142,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="URLValidatorInCorrect" type="b2602c69:ProjectViewProjectNode" />
               <item name="URLValidatorInCorrect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="URLValidatorInCorrect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="URLValidatorInCorrect" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="URLValidatorInCorrect" type="b2602c69:ProjectViewProjectNode" />
@@ -140,7 +170,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -149,6 +178,9 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../URLValidatorCorrect/test/UrlValidatorTest.java" />
   </component>
   <component name="RunDashboard">
@@ -163,7 +195,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RandomTest.testUrlsRandomly">
+  <component name="RunManager" selected="JUnit.RandomTest">
+    <configuration name="RandomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="URLValidatorInCorrect" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RandomTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RandomTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="URLValidatorInCorrect" />
       <option name="PACKAGE_NAME" value="" />
@@ -179,16 +220,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RandomTest" />
       <option name="METHOD_NAME" value="testUrlsRandomly" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UrlValidatorTest.testInvalidUrls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="URLValidatorInCorrect" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UrlValidatorTest" />
-      <option name="METHOD_NAME" value="testInvalidUrls" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -216,11 +247,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RandomTest.testUrlsRandomly" />
+        <item itemvalue="JUnit.RandomTest" />
         <item itemvalue="JUnit.RandomTest.test" />
+        <item itemvalue="JUnit.RandomTest.testUrlsRandomly" />
         <item itemvalue="JUnit.UrlValidatorTest.testValidUrls" />
         <item itemvalue="JUnit.UrlValidatorTest.testUnitTests" />
-        <item itemvalue="JUnit.UrlValidatorTest.testInvalidUrls" />
       </list>
     </recent_temporary>
   </component>
@@ -260,42 +291,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RandomTest_testUrlsRandomly - 2019.06.06 at 18h 31m 29s.xml">
-      <configuration name="RandomTest.testUrlsRandomly" configurationId="JUnit" />
+    <history-entry file="RandomTest - 2019.06.06 at 14h 39m 27s.xml">
+      <configuration name="RandomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RandomTest_testUrlsRandomly - 2019.06.06 at 18h 32m 29s.xml">
-      <configuration name="RandomTest.testUrlsRandomly" configurationId="JUnit" />
+    <history-entry file="RandomTest - 2019.06.06 at 14h 40m 27s.xml">
+      <configuration name="RandomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RandomTest_testUrlsRandomly - 2019.06.06 at 18h 33m 09s.xml">
-      <configuration name="RandomTest.testUrlsRandomly" configurationId="JUnit" />
+    <history-entry file="RandomTest - 2019.06.06 at 14h 41m 00s.xml">
+      <configuration name="RandomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RandomTest_testUrlsRandomly - 2019.06.06 at 18h 34m 33s.xml">
-      <configuration name="RandomTest.testUrlsRandomly" configurationId="JUnit" />
+    <history-entry file="RandomTest - 2019.06.06 at 14h 41m 36s.xml">
+      <configuration name="RandomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RandomTest_testUrlsRandomly - 2019.06.06 at 18h 35m 02s.xml">
-      <configuration name="RandomTest.testUrlsRandomly" configurationId="JUnit" />
+    <history-entry file="RandomTest - 2019.06.06 at 14h 49m 26s.xml">
+      <configuration name="RandomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RandomTest_testUrlsRandomly - 2019.06.06 at 18h 35m 25s.xml">
-      <configuration name="RandomTest.testUrlsRandomly" configurationId="JUnit" />
+    <history-entry file="RandomTest - 2019.06.06 at 14h 49m 36s.xml">
+      <configuration name="RandomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RandomTest_testUrlsRandomly - 2019.06.06 at 18h 36m 08s.xml">
-      <configuration name="RandomTest.testUrlsRandomly" configurationId="JUnit" />
+    <history-entry file="RandomTest - 2019.06.06 at 15h 16m 38s.xml">
+      <configuration name="RandomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RandomTest_testUrlsRandomly - 2019.06.06 at 18h 36m 47s.xml">
-      <configuration name="RandomTest.testUrlsRandomly" configurationId="JUnit" />
+    <history-entry file="RandomTest - 2019.06.06 at 15h 16m 47s.xml">
+      <configuration name="RandomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RandomTest_testUrlsRandomly - 2019.06.06 at 18h 38m 18s.xml">
-      <configuration name="RandomTest.testUrlsRandomly" configurationId="JUnit" />
+    <history-entry file="RandomTest - 2019.06.06 at 15h 17m 08s.xml">
+      <configuration name="RandomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RandomTest_testUrlsRandomly - 2019.06.06 at 18h 38m 37s.xml">
-      <configuration name="RandomTest.testUrlsRandomly" configurationId="JUnit" />
+    <history-entry file="RandomTest - 2019.06.06 at 15h 19m 54s.xml">
+      <configuration name="RandomTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1912" y="8" width="1920" height="909" extended-state="0" />
+    <frame x="575" y="23" width="865" height="837" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.036452007" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -304,15 +335,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49922958" visible="true" weight="0.38922888" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39902082" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49922958" weight="0.37315437" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.040268455" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49922958" weight="0.32952693" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007704" side_tool="true" weight="0.70146817" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32952693" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3284974" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32751676" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -329,6 +360,18 @@
     <MESSAGE value="Adding random tests" />
     <option name="LAST_COMMIT_MESSAGE" value="Adding random tests" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/RandomTest.java</url>
+          <line>172</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/URLValidatorInCorrect.iml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -344,21 +387,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml" />
     <entry file="file://$PROJECT_DIR$/test/UnitTests.java" />
     <entry file="file://$PROJECT_DIR$/test/validUrls" />
-    <entry file="file://$PROJECT_DIR$/src/UrlValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="336" column="25" selection-start-line="336" selection-start-column="25" selection-end-line="336" selection-end-column="25" />
-          <folding>
-            <element signature="e#8031#8032#0" expanded="true" />
-            <element signature="e#8057#8058#0" expanded="true" />
-            <element signature="e#8543#8544#0" expanded="true" />
-            <element signature="e#8576#8577#0" expanded="true" />
-            <element signature="e#9466#9467#0" expanded="true" />
-            <element signature="e#9510#9511#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/UnitTest.java" />
     <entry file="file://$PROJECT_DIR$/../../../../FinalProject/URLValidatorInCorrect/test/UrlValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -367,16 +395,6 @@
           <folding>
             <element signature="e#15239#15240#0" expanded="true" />
             <element signature="e#15268#15269#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/RandomTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1965">
-          <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -398,11 +416,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/UrlValidatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="75" column="6" lean-forward="true" selection-start-line="75" selection-start-column="6" selection-end-line="75" selection-end-column="6" />
+        <state relative-caret-position="6705">
+          <caret line="568" column="26" lean-forward="true" selection-start-line="568" selection-start-column="26" selection-end-line="568" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/regex/Matcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="241" selection-start-line="241" selection-end-line="241" />
           <folding>
-            <element signature="e#15239#15240#0" expanded="true" />
-            <element signature="e#15268#15269#0" expanded="true" />
+            <element signature="e#24818#24819#0" expanded="true" />
+            <element signature="e#24863#24864#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/regex/Pattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5063">
+          <caret line="792" column="19" selection-start-line="792" selection-start-column="19" selection-end-line="792" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UrlValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="488" column="40" selection-start-line="488" selection-start-column="40" selection-end-line="488" selection-end-column="40" />
+          <folding>
+            <element signature="e#8031#8032#0" expanded="true" />
+            <element signature="e#8057#8058#0" expanded="true" />
+            <element signature="e#8543#8544#0" expanded="true" />
+            <element signature="e#8576#8577#0" expanded="true" />
+            <element signature="e#9466#9467#0" expanded="true" />
+            <element signature="e#9510#9511#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/RandomTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2408">
+          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -410,9 +467,77 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>URLValidatorInCorrect</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>
