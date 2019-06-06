@@ -56,7 +56,8 @@ public class UnitTest extends TestCase {
 
     ResultPair[] testUrlQuery = {new ResultPair("?action=view", true),
             new ResultPair("?action=edit&mode=up", true),
-            new ResultPair("", true)
+            new ResultPair("", true),
+            new ResultPair( "? ", false)
     };
 
     /**
@@ -72,6 +73,7 @@ public class UnitTest extends TestCase {
         testInvalidAuthority();
         testInvalidPath();
         testInvalidPort();
+        testInvalidQuery();
 
         // Test valid urls (generated)
         testValidUrls();
@@ -188,8 +190,8 @@ public class UnitTest extends TestCase {
     public void testInvalidQuery() {
         UrlValidator urlValidator = new UrlValidator();
 
-        String testUrl  =  testUrlScheme[0].item + testUrlAuthority[6].item + testUrlPort[0].item
-                + testPath[0].item + testUrlQuery[0].item;
+        String testUrl  =  testUrlScheme[0].item + testUrlAuthority[0].item + testUrlPort[0].item
+                + testPath[0].item + testUrlQuery[3].item;
 
         System.out.print("\ntestInvalidPath()\nTesting url: " + testUrl +" - ");
 
