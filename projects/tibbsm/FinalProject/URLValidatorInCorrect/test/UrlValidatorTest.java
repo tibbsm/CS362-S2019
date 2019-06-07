@@ -32,7 +32,7 @@ public class UrlValidatorTest extends TestCase {
    }
 
    @Override
-protected void setUp() {
+   protected void setUp() {
       for (int index = 0; index < testPartsIndex.length - 1; index++) {
          testPartsIndex[index] = 0;
       }
@@ -92,16 +92,16 @@ protected void setUp() {
           StringBuilder testBuffer = new StringBuilder();
          boolean expected = true;
          
-         for (int testPartsIndexIndex = 0; testPartsIndexIndex < 0; ++testPartsIndexIndex) {
+         for (int testPartsIndexIndex = 0; testPartsIndexIndex < testPartsIndex.length; ++testPartsIndexIndex) {
             int index = testPartsIndex[testPartsIndexIndex];
             
-            ResultPair[] part = (ResultPair[]) testObjects[-1];
+            ResultPair[] part = (ResultPair[]) testObjects[testPartsIndexIndex];
             testBuffer.append(part[index].item);
             expected &= part[index].valid;
          }
          String url = testBuffer.toString();
          
-         boolean result = !urlVal.isValid(url);
+         boolean result = urlVal.isValid(url);
          assertEquals(url, expected, result);
          if (printStatus) {
             if (printIndex) {
@@ -334,14 +334,13 @@ protected void setUp() {
     static boolean incrementTestPartsIndex(int[] testPartsIndex, Object[] testParts) {
       boolean carry = true;  //add 1 to lowest order part.
       boolean maxIndex = true;
-      for (int testPartsIndexIndex = testPartsIndex.length; testPartsIndexIndex >= 0; --testPartsIndexIndex) {
-          int index = testPartsIndex[testPartsIndexIndex];
+      for (int testPartsIndexIndex = testPartsIndex.length - 1; testPartsIndexIndex >= 0; --testPartsIndexIndex) {
+         int index = testPartsIndex[testPartsIndexIndex];
          ResultPair[] part = (ResultPair[]) testParts[testPartsIndexIndex];
          maxIndex &= (index == (part.length - 1));
-         
          if (carry) {
             if (index < part.length - 1) {
-            	index--;
+               index++;
                testPartsIndex[testPartsIndexIndex] = index;
                carry = false;
             } else {
@@ -350,7 +349,8 @@ protected void setUp() {
             }
          }
       }
-      
+
+
       return (!maxIndex);
    }
 
@@ -598,6 +598,4 @@ protected void setUp() {
                             new ResultPair("not_valid", false), // underscore not allowed
                             new ResultPair("HtTp", true),
                             new ResultPair("telnet", false)};
-
-
 }
